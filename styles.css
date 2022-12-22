@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Oleo+Script+Swash+Caps:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300&display=swap');
+
+/*Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst); */
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+root{
+    --main-bg-color:#F3F6F9;
+}
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+header{
+    background-color: #5722CD;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    border: 2px dashed yellow;
+}
+
+main{
+
+}
+
+footer{
+
+}
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+
+
+ .ul-header{
+     display:flex;
+     flex-direction:row;
+     justify-content:flex-end;
+     border: 2px dashed green;
+     list-style: none;
+ }
+
+li{
+    border: 2px dashed black;
+    margin:15px;
+    color:white;
+    font-family: 'Merriweather', serif;
+}
+
+.div-text-header{
+    display:flex;
+    flex-direction:column;
+    border: 2px dashed green;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------- */
+
