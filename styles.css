@@ -15,7 +15,7 @@ Grijs #7A7A7A (voor de service-tegel tekst); */
     box-sizing:border-box;
 }
 
-root{
+root {
     --main-bg-color:#F3F6F9;
 }
 
@@ -44,22 +44,53 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --main-bg-color: white;
+    --default-margin: 16px;
+    --purple:#5722CD;
+    --blue:#4845E4;
+    --lightpurple:#F2F0FF;
+    --lightgrey:#F3F6F9;
+    --grey:#7A7A7A;
+}
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
+.outer-content-container{
+    display:flex;
+    width:100vw;
+    justify-content:center;
+}
 
-header{
-    background-color: #5722CD;
+.inner-content-container{
+    display:flex;
+    flex-direction:column;
+    margin: 0 100px;
+    flex-basis:1400px;
+    flex-grow:0;
+    flex-shrink:1;
+    border: 2px dashed black;
+    gap:20px;
+
+}
+
+#header{
+    background: rgb(72,69,228);
+    background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 100%);
     width:100%;
     display:flex;
     flex-direction:column;
     border: 2px dashed yellow;
+    position:relative;
 }
 
-main{
-
+#main{
+padding:10px;
+    display:flex;
+    flex-direction:column;
 }
 
-footer{
+#footer{
 
 }
 
@@ -71,30 +102,87 @@ footer{
 
 /* --------------- 4.1 Header ------------------------- */
 
+.div-text-header{
+    display:flex;
+    justify-content:flex-end;
+}
 
+header {
+    width: 100%;
+    padding:10px;
+    max-height:400px;
+}
 
- .ul-header{
+ .header-content__navigation ul{
      display:flex;
      flex-direction:row;
      justify-content:flex-end;
      border: 2px dashed green;
-     list-style: none;
+     flex-basis:200px;
+     flex-grow:0;
+     flex-shrink:1;
+     gap:15px;
  }
 
-li{
+.header-content__navigation li{
     border: 2px dashed black;
-    margin:15px;
+    display:flex;
+    font-family: 'Merriweather', serif;
+    list-style: none;
+}
+.header-content__navigation a{
+    color:white;
+    text-decoration: none;
+}
+
+.header-content__cta{
+    display:flex;
+    gap:20px;
+    flex-direction:column;
+    border: 2px dashed purple;
+    align-items:center;
+    flex-basis:200px;
+    flex-grow:0;
+    flex-shrink:1;
+    padding:40px;
     color:white;
     font-family: 'Merriweather', serif;
 }
 
-.div-text-header{
-    display:flex;
-    flex-direction:column;
-    border: 2px dashed green;
+.header-squiggle{
+    background-image:url(/assets/squiggle_line_stripe.svg);
+    position: absolute;
+    width: 80px;
+    height:80px;
+    bottom:-10px;
+    left: calc(50% - 40px);
 }
 
+button{
+    background-color:#ED4385;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:30px;
+    margin:20px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 24px rgba(0,0,0,0.20);
+}
+
+
 /* --------------- 4.2 Introduction ------------------- */
+
+.main-context__text1{
+    color:purple;
+    font-size:20px;
+    text-align:center;
+    font-family: 'Merriweather', serif;
+}
+
+
 
 /* ------------------------------- 5. Media Queries -------------- */
 
