@@ -15,9 +15,6 @@ Grijs #7A7A7A (voor de service-tegel tekst); */
     box-sizing:border-box;
 }
 
-root {
-    --main-bg-color:#F3F6F9;
-}
 
 /*////////////////////////
     Table of Contents
@@ -40,20 +37,20 @@ root {
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
 :root {
-    --main-bg-color: white;
     --default-margin: 16px;
     --purple:#5722CD;
     --blue:#4845E4;
     --lightpurple:#F2F0FF;
     --lightgrey:#F3F6F9;
     --grey:#7A7A7A;
+    --font-family: 'Roboto', sans-serif;
 }
 
+h2{
+    font-family: 'Merriweather', serif;
+    font-size:1.5em;
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 .outer-content-container{
@@ -65,13 +62,12 @@ body {
 .inner-content-container{
     display:flex;
     flex-direction:column;
-    margin: 0 100px;
+    /*margin:0em 1em 0em 1em;*/
     flex-basis:1400px;
-    flex-grow:0;
-    flex-shrink:1;
-    border: 2px dashed black;
-    gap:20px;
-
+    flex-grow: 0;
+    flex-shrink: 1;
+    border: 2px dashed green;
+    /*gap:20px;*/
 }
 
 #header{
@@ -80,14 +76,20 @@ body {
     width:100%;
     display:flex;
     flex-direction:column;
+    flex-basis:auto;
+    flex-grow:0;
+    flex-shrink:1;
     border: 2px dashed yellow;
     position:relative;
+    height:500px;
 }
 
-#main{
-padding:10px;
-    display:flex;
-    flex-direction:column;
+#main {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family:var(--font-family);
 }
 
 #footer{
@@ -147,6 +149,7 @@ header {
     padding:40px;
     color:white;
     font-family: 'Merriweather', serif;
+    text-align:center;
 }
 
 .header-squiggle{
@@ -169,19 +172,142 @@ button{
     border-radius:30px;
     margin:20px;
     text-transform: uppercase;
-    box-shadow: 0px 0px 24px rgba(0,0,0,0.20);
+    box-shadow: 5px 5px 24px rgba(0,0,0,0.20);
 }
 
 
 /* --------------- 4.2 Introduction ------------------- */
 
-.main-context__text1{
-    color:purple;
+.main-section1-section{
+    display:flex;
+    justify-content:center;
+}
+
+.layout-section-hello{
+    display:flex;
+    flex-direction: column;
+    flex-basis:400px;
+    padding: 50px 200px;
+    max-height:350px;
+    border: 2px dashed purple;
+    justify-content:center;
+}
+
+
+.main-article1__text1{
+    color:var(--purple);
+    margin:30px;
+    display:flex;
+    flex-direction:column;
+    border: 2px dashed greenyellow;
     font-size:20px;
-    text-align:center;
     font-family: 'Merriweather', serif;
 }
 
+
+.main-article1__text2{
+    text-align:center;
+}
+
+
+/* --------------- 4.3 sections ------------------- */
+
+.main-section2-section{
+    padding:30px;
+    background-color:var(--lightgrey);
+}
+
+.main-section2-article{
+    display:flex;
+    flex-direction:row;
+    padding:1em;
+    margin:2em;
+    border: 2px dashed blue;
+}
+
+.main-section2-three-blocks{
+    display:flex;
+    flex-direction:column;
+    border: 2px dashed purple;
+    text-align:left;
+    padding-top:5em;
+}
+
+.Variety{
+    flex-direction:row-reverse;
+}
+
+.img-3blocks {
+    width: 100%;
+    height:100%;
+}
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    box-shadow: 1px 1px 24px rgba(0,0,0,0.20);
+}
+
+.main-section2-div{
+    display:flex;
+    flex-direction:column;
+    flex-basis:300px;
+    flex-grow:0;
+    flex-shrink:0;
+    margin:3em;
+    gap:1em;
+    border: 2px dashed darkslategrey;
+}
+
+.main-view-project{
+    color:var(--purple);
+    text-transform: uppercase;
+
+}
+
+.squiggle-main{
+    width:4em;
+    height:4em;
+}
+
+.main-selection3__section{
+    padding:3em;
+    border: 2px dashed deeppink;
+}
+
+.main-section3__div{
+    display:flex;
+    flex-direction:row;
+    border: 2px dashed forestgreen;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    padding:3em;
+    background-color:var(--lightgrey)
+}
+
+.main-section3-six-blocks{
+    display:flex;
+    flex-direction:column;
+    height:20em;
+    justify-content:center;
+    text-align:left;
+    flex-basis:400px;
+    padding: 1em;
+    border: 2px dashed darkblue;
+    gap:1.3em;
+    color:var(--grey);
+    margin:1em;
+}
+
+.main-section3-six-blocks h2{
+    color:var(--purple);
+}
+
+.main-section3-icons{
+    height:7em;
+    width:7em;
+}
 
 
 /* ------------------------------- 5. Media Queries -------------- */
