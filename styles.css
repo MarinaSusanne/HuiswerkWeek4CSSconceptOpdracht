@@ -62,37 +62,39 @@ h2{
 .inner-content-container{
     display:flex;
     flex-direction:column;
-    /*margin:0em 1em 0em 1em;*/
-    flex-basis:1400px;
+    max-width: 1000px;
     flex-grow: 0;
     flex-shrink: 1;
     border: 2px dashed green;
+
+
     /*gap:20px;*/
 }
 
-#header{
+header{
     background: rgb(72,69,228);
     background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 100%);
     width:100%;
-    display:flex;
-    flex-direction:column;
-    flex-basis:auto;
-    flex-grow:0;
-    flex-shrink:1;
     border: 2px dashed yellow;
     position:relative;
     height:500px;
+    padding:10px;
+    max-height:400px;
 }
 
-#main {
+main {
     padding: 10px;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
     text-align: center;
     font-family:var(--font-family);
 }
 
-#footer{
+footer{
+    background-color:black;
+    color:white;
+    padding:1.5em;
+    text-align: center;
 
 }
 
@@ -107,12 +109,6 @@ h2{
 .div-text-header{
     display:flex;
     justify-content:flex-end;
-}
-
-header {
-    width: 100%;
-    padding:10px;
-    max-height:400px;
 }
 
  .header-content__navigation ul{
@@ -223,6 +219,7 @@ button{
     padding:1em;
     margin:2em;
     border: 2px dashed blue;
+    align-items:center;
 }
 
 .main-section2-three-blocks{
@@ -239,14 +236,14 @@ button{
 
 .img-3blocks {
     width: 100%;
-    height:100%;
-}
+    }
 
 .image-wrapper {
     flex-basis: 800px;
     flex-grow: 0;
     flex-shrink: 1;
     box-shadow: 1px 1px 24px rgba(0,0,0,0.20);
+    min-width:50px;
 }
 
 .main-section2-div{
@@ -258,6 +255,7 @@ button{
     margin:3em;
     gap:1em;
     border: 2px dashed darkslategrey;
+    align-items:center;
 }
 
 .main-view-project{
@@ -309,6 +307,47 @@ button{
     width:7em;
 }
 
+.main-section3__title{
+    background-color: var(--purple);
+    gap:20px;
+    border: 2px dashed purple;
+    align-items:center;
+    flex-basis:200px;
+    flex-grow:0;
+    flex-shrink:1;
+    padding:15px;
+    font-family: 'Merriweather', serif;
+    text-align:center;
+    color:white;
+}
+
+
+h2 {
+    font-size:0.9em;
+}
+
+.section3-form{
+    background-color: var(--purple);
+    gap:20px;
+    border: 2px dashed purple;
+    align-items:center;
+    flex-basis:200px;
+    flex-grow:0;
+    flex-shrink:1;
+    padding:40px;
+    font-family: 'Merriweather', serif;
+    text-align:center;
+}
+
+input [type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color:white;
+    font-size: 1.5em;
+
+}
 
 /* ------------------------------- 5. Media Queries -------------- */
 
