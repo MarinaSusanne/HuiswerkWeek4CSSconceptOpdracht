@@ -47,10 +47,24 @@ Grijs #7A7A7A (voor de service-tegel tekst); */
     --font-family: 'Roboto', sans-serif;
 }
 
-h2{
+h1, h2, h3, h3, h5, h6 {
     font-family: 'Merriweather', serif;
-    font-size:1.5em;
+   }
+
+body{
+   font-family: var(--font-family);
 }
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 .outer-content-container{
@@ -62,33 +76,23 @@ h2{
 .inner-content-container{
     display:flex;
     flex-direction:column;
-    max-width: 1000px;
+    max-width: 1400px;
     flex-grow: 0;
     flex-shrink: 1;
-    border: 2px dashed green;
-
-
-    /*gap:20px;*/
+    margin: 0 20px;
+    align-items:center;
 }
 
 header{
     background: rgb(72,69,228);
     background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 100%);
     width:100%;
-    border: 2px dashed yellow;
     position:relative;
     height:500px;
-    padding:10px;
-    max-height:400px;
+    padding:0px 0px 80px 0px;
+    max-height:450px;
 }
 
-main {
-    padding: 10px;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    text-align: center;
-    font-family:var(--font-family);
-}
 
 footer{
     background-color:black;
@@ -115,18 +119,22 @@ footer{
      display:flex;
      flex-direction:row;
      justify-content:flex-end;
-     border: 2px dashed green;
      flex-basis:200px;
      flex-grow:0;
      flex-shrink:1;
      gap:15px;
  }
 
-.header-content__navigation li{
-    border: 2px dashed black;
+ #header2{
     display:flex;
-    font-family: 'Merriweather', serif;
+    flex-direction:column;
+    align-items:flex-end;
+ }
+
+.header-content__navigation li{
+    display:flex;
     list-style: none;
+    align-items: end;
 }
 .header-content__navigation a{
     color:white;
@@ -137,14 +145,12 @@ footer{
     display:flex;
     gap:20px;
     flex-direction:column;
-    border: 2px dashed purple;
     align-items:center;
     flex-basis:200px;
     flex-grow:0;
     flex-shrink:1;
     padding:40px;
     color:white;
-    font-family: 'Merriweather', serif;
     text-align:center;
 }
 
@@ -185,7 +191,6 @@ button{
     flex-basis:400px;
     padding: 50px 200px;
     max-height:350px;
-    border: 2px dashed purple;
     justify-content:center;
 }
 
@@ -195,39 +200,28 @@ button{
     margin:30px;
     display:flex;
     flex-direction:column;
-    border: 2px dashed greenyellow;
     font-size:20px;
     font-family: 'Merriweather', serif;
+    text-align:center;
 }
-
 
 .main-article1__text2{
     text-align:center;
 }
 
-
 /* --------------- 4.3 sections ------------------- */
 
-.main-section2-section{
+#main2{
     padding:30px;
-    background-color:var(--lightgrey);
+    background-color:#F3F6F9;
 }
 
-.main-section2-article{
+.main-section2__article{
     display:flex;
     flex-direction:row;
-    padding:1em;
     margin:2em;
-    border: 2px dashed blue;
-    align-items:center;
-}
-
-.main-section2-three-blocks{
-    display:flex;
-    flex-direction:column;
-    border: 2px dashed purple;
-    text-align:left;
-    padding-top:5em;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
 }
 
 .Variety{
@@ -236,17 +230,17 @@ button{
 
 .img-3blocks {
     width: 100%;
+    height:100%;
     }
 
 .image-wrapper {
-    flex-basis: 800px;
+    flex-basis: 500px;
     flex-grow: 0;
     flex-shrink: 1;
-    box-shadow: 1px 1px 24px rgba(0,0,0,0.20);
-    min-width:50px;
+    box-shadow: 0px 0px 24px rgba(0,0,0,0.20);
 }
 
-.main-section2-div{
+.main-section2__div{
     display:flex;
     flex-direction:column;
     flex-basis:300px;
@@ -254,14 +248,12 @@ button{
     flex-shrink:0;
     margin:3em;
     gap:1em;
-    border: 2px dashed darkslategrey;
     align-items:center;
 }
 
 .main-view-project{
     color:var(--purple);
     text-transform: uppercase;
-
 }
 
 .squiggle-main{
@@ -269,22 +261,15 @@ button{
     height:4em;
 }
 
-.main-selection3__section{
-    padding:3em;
-    border: 2px dashed deeppink;
-}
-
-.main-section3__div{
+#main3{
     display:flex;
     flex-direction:row;
-    border: 2px dashed forestgreen;
     flex-wrap:wrap;
     justify-content:space-evenly;
     padding:3em;
-    background-color:var(--lightgrey)
 }
 
-.main-section3-six-blocks{
+.main-section3__six-articles{
     display:flex;
     flex-direction:column;
     height:20em;
@@ -292,13 +277,14 @@ button{
     text-align:left;
     flex-basis:400px;
     padding: 1em;
-    border: 2px dashed darkblue;
     gap:1.3em;
     color:var(--grey);
     margin:1em;
+    border: 1px solid var(--purple);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-.main-section3-six-blocks h2{
+.main-section3__six-blocks h2{
     color:var(--purple);
 }
 
@@ -307,47 +293,67 @@ button{
     width:7em;
 }
 
-.main-section3__title{
+#main4{
     background-color: var(--purple);
-    gap:20px;
-    border: 2px dashed purple;
-    align-items:center;
-    flex-basis:200px;
+}
+
+.main-section4__title{
     flex-grow:0;
     flex-shrink:1;
-    padding:15px;
-    font-family: 'Merriweather', serif;
-    text-align:center;
+    padding:20px;
     color:white;
+    text-align:center;
 }
 
-
-h2 {
-    font-size:0.9em;
-}
-
-.section3-form{
+.section4__form{
     background-color: var(--purple);
-    gap:20px;
-    border: 2px dashed purple;
-    align-items:center;
-    flex-basis:200px;
     flex-grow:0;
     flex-shrink:1;
-    padding:40px;
-    font-family: 'Merriweather', serif;
-    text-align:center;
+    display:flex;
+    flex-direction:column;
+    color:white;
+    text-align:left;
+    flex-basis:50em;
+    max-width:500px;
+    max-height:500px;
+}
+
+
+.section4__form ::placeholder{
+    padding: 0 0 0 1em;
 }
 
 input [type=text] {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
     box-sizing: border-box;
     color:white;
-    font-size: 1.5em;
-
+    font-size: 0.8em;
+    text-align:left;
 }
 
-/* ------------------------------- 5. Media Queries -------------- */
+#name{
+    width:400px;
+    height:50px;
+}
 
+#email{
+    width:400px;
+    height:50px;
+}
+#message{
+    width:400px;
+    height:200px;
+}
+
+/*!* ------------------------------- 5. Media Queries -------------- *!*/
+
+/*@media screen and (max-width: 576px) {*/
+/*    .image-wrapper {*/
+/*        flex-basis: auto;*/
+/*    }*/
+
+/*    .main-section2-div:nth-of-type(odd),*/
+/*    .main-section2-div {*/
+/*        flex-direction: column;*/
+/*        margin: 0;*/
+/*    }*/
+}

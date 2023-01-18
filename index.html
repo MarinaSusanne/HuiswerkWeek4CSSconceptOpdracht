@@ -6,8 +6,9 @@
     <title>Title</title>
 </head>
 <body>
-<header class="outer-content-container Header">
-    <div class="inner-content-container">
+
+<header id="Header" class="outer-content-container">
+    <div class="inner-content-container" id="header2">
     <nav class="header-content__navigation">
         <ul>
             <li> <a href="Header" >Case studies </a></li>
@@ -27,8 +28,9 @@
 
 
 
-<main id="main" class="outer-content-container">
+<main id="main1" class="outer-content-container">
     <div class="inner-content-container">
+
     <section class="main-section1-section">
         <article class="main-article1">
             <p class= "main-article1__text1">
@@ -44,10 +46,10 @@
         </article>
     </section>
 
-     <section class="main-section2-section">
-         <div class ="main-section2-three-blocks">
-             <article class="main-section2-article">
-                 <div class="main-section2-div">
+     <section id="main2" class="outer-content-container">
+         <div class ="inner-content-container">
+             <article class="main-section2__article">
+                 <div class="main-section2__div">
                      <h2> Rolling Stone </h2>
                      <img src="/assets/squiggle_line.svg"  alt="squiggle" class="squiggle-main" >
                      <p class="man-content-text"> You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
@@ -58,8 +60,8 @@
                     </span>
              </article>
 
-             <article class="main-section2-article Variety">
-                 <div class="main-section2-div">
+             <article class="main-section2__article Variety">
+                 <div class="main-section2__div">
                      <h2> Variety </h2>
                      <img src="/assets/squiggle_line.svg"  alt="squiggle" class="squiggle-main">
                      <p class="main-content-text"> Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
@@ -70,8 +72,8 @@
                     </span>
              </article>
 
-             <article class="main-section2-article Worth">
-                 <div class="main-section2-div">
+             <article class="main-section2__article Worth">
+                 <div class="main-section2__div">
                     <h2> Worth </h2>
                    <img src="/assets/squiggle_line.svg"  alt="squiggle" class="squiggle-main">
                      <p class="main-content-text"> Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
@@ -85,40 +87,40 @@
          </div>
      </section>
 
-        <section class="main-section3__section">
-            <div class ="main-section3__div">
-            <article class="main-section3-six-blocks">
+        <section class="outer-content-container">
+            <div id="main3" class ="inner-content-container">
+            <article class="main-section3__six-articles">
                 <img src="assets/icon_web-design.svg" alt="icon-web design" class ="main-section3-icons">
                 <h2>Web Design</h2>
                 <P>Good web design is how companies stand out from their competitors. High quality web design leads to increased user conversion and engagement. Through a proven web design process, we help clients launch websites and products that improve on their bottom line.</P>
                  </article>
 
-             <article class="main-section3-six-blocks">
+             <article class="main-section3__six-articles">
                  <img src="assets/icon_web-development.svg" alt="icon-web design" class ="main-section3-icons">
                  <h2> Web Development </h2>
                  <p>Modern websites need to be responsive and fully functional at all sizes. We develop all of our sites with a mobile first approach and ensure that our code quality is clean, organized and performant. Already have a design but need it developed? We’re here to help!</p>
                 </article>
 
-            <article class="main-section3-six-blocks">
+            <article class="main-section3__six-articles">
                 <img src="assets/icon_ux.svg" alt="icon-web design" class ="main-section3-icons">
                 <h2>User Experience </h2>
                 <p>In order to build successful products you have to understand the user. We create user personas, wireframes and prototypes to test with users. This allows us to gather feedback which helps to shape the product and can quickly eliminate potential risks – saving you time and money.</p>
                 </article>
 
-            <article class="main-section3-six-blocks">
+            <article class="main-section3__six-articles">
                 <img src="assets/icon_graphic-design.svg" alt="icon-web design" class ="main-section3-icons">
                 <h2>Logo Design + Branding</h2>
                 <p> Nike, Apple, Coca-Cola, Starbucks. What do all of these brands have in common? Easily recognizable logos and brand identity. The best brands stand out from the crowd by having a clear and unique point of view. We will work with you to understand your vision and help create a unique brand identity and style guide for your company.
                 </p>
             </article>
 
-            <article class="main-section3-six-blocks">
+            <article class="main-section3__six-articles">
                 <img src="assets/icon_seo.svg" alt="icon-web design" class ="main-section3-icons">
                 <h2>SEO</h2>
                 <p>Do you want your site to rank higher in search results? Google is constantly changing their algorithms for how they rank pages. Don’t worry about constantly playing catch-up. We will make sure your website it optimized, providing you the best opportunities for organic search exposure.</p>
                 </article>
 
-            <article class="main-section3-six-blocks">
+            <article class="main-section3__six-articles">
                 <img src="assets/icon_copywriting.svg" alt="icon-web design" class ="main-section3-icons">
                 <h2>Copy Writing</h2>
                 <p>Brand messaging needs to be clear, direct and easy to understand to be effective. A unique tone of voice will help you stand out from the crowd and build brand loyalty. We work with you to establish your brand bible and ensure your messaging is focused and targeted.</p>
@@ -126,33 +128,27 @@
         </div>
     </section>
 
-     <section class="main-section3-section">
-         <div class="main-section3-div">
-             <h1 class="main-section3__title h1"> Let's work together</h1>
-             <h2 class="main-section3__title h2"> Have a question? Need a quote? Let us know!</h2>
-             <form class="section3-form">
-                 <label for="name"> Name </label><br>
-                 <input type="text" id="name" name="name"><br>
-                 <label for="email"> Email</label><br>
-                 <input type="text" id="email" name="email">
-                 <label for="message"> Message</label><br>
-                 <input type="text" id="message" name="message">
+     <section id="main4" class="outer-content-container">
+         <div class="inner-content-container">
+             <h1 class="main-section4__title h1"> Let's work together</h1>
+             <h2 class="main-section4__title h2"> Have a question? Need a quote? Let us know!</h2>
+             <form class="section4__form">
+                 <label for="name"> Name </label>
+                 <input type="text" id="name" name="name" placeholder="naam"><br>
                  <br>
+                 <label for="email"> Email</label>
+                 <input type="text" id="email" name="email" placeholder="e-mail">
+                 <br>
+                 <label for="message"> Message</label>
+                 <input type="text" id="message" name="message" placeholder="bericht">
                  <button> send </button>
              </form>
-
          </div>
-
-
-
-
      </section>
-
-
 
 </main>
 
-<footer id="footer" class="outer-content-container" >
+<footer id="footer" class="outer-content-container Footer" >
     <div class="inner-content-container">
     <p>Business website opdracht © NOVI Hogeschool 2022 </p>
     </div>
