@@ -1,0 +1,359 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Oleo+Script+Swash+Caps:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300&display=swap');
+
+/*Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst); */
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+:root {
+    --default-margin: 16px;
+    --purple:#5722CD;
+    --blue:#4845E4;
+    --lightpurple:#F2F0FF;
+    --lightgrey:#F3F6F9;
+    --grey:#7A7A7A;
+    --font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h3, h5, h6 {
+    font-family: 'Merriweather', serif;
+   }
+
+body{
+   font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+.outer-content-container{
+    display:flex;
+    width:100vw;
+    justify-content:center;
+}
+
+.inner-content-container{
+    display:flex;
+    flex-direction:column;
+    max-width: 1400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 20px;
+    align-items:center;
+}
+
+header{
+    background: rgb(72,69,228);
+    background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 100%);
+    width:100%;
+    position:relative;
+    height:500px;
+    padding:0px 0px 80px 0px;
+    max-height:450px;
+}
+
+
+footer{
+    background-color:black;
+    color:white;
+    padding:1.5em;
+    text-align: center;
+
+}
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+.div-text-header{
+    display:flex;
+    justify-content:flex-end;
+}
+
+ .header-content__navigation ul{
+     display:flex;
+     flex-direction:row;
+     justify-content:flex-end;
+     flex-basis:200px;
+     flex-grow:0;
+     flex-shrink:1;
+     gap:15px;
+ }
+
+ #header2{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+ }
+
+.header-content__navigation li{
+    display:flex;
+    list-style: none;
+    align-items: end;
+}
+.header-content__navigation a{
+    color:white;
+    text-decoration: none;
+}
+
+.header-content__cta{
+    display:flex;
+    gap:20px;
+    flex-direction:column;
+    align-items:center;
+    flex-basis:200px;
+    flex-grow:0;
+    flex-shrink:1;
+    padding:40px;
+    color:white;
+    text-align:center;
+}
+
+.header-squiggle{
+    background-image:url(/assets/squiggle_line_stripe.svg);
+    position: absolute;
+    width: 80px;
+    height:80px;
+    bottom:-10px;
+    left: calc(50% - 40px);
+}
+
+button{
+    background-color:#ED4385;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:30px;
+    margin:20px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 24px rgba(0,0,0,0.20);
+}
+
+
+/* --------------- 4.2 Introduction ------------------- */
+
+.main-section1-section{
+    display:flex;
+    justify-content:center;
+}
+
+.layout-section-hello{
+    display:flex;
+    flex-direction: column;
+    flex-basis:400px;
+    padding: 50px 200px;
+    max-height:350px;
+    justify-content:center;
+}
+
+
+.main-article1__text1{
+    color:var(--purple);
+    margin:30px;
+    display:flex;
+    flex-direction:column;
+    font-size:20px;
+    font-family: 'Merriweather', serif;
+    text-align:center;
+}
+
+.main-article1__text2{
+    text-align:center;
+}
+
+/* --------------- 4.3 sections ------------------- */
+
+#main2{
+    padding:30px;
+    background-color:#F3F6F9;
+}
+
+.main-section2__article{
+    display:flex;
+    flex-direction:row;
+    margin:2em;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+
+.Variety{
+    flex-direction:row-reverse;
+}
+
+.img-3blocks {
+    width: 100%;
+    height:100%;
+    }
+
+.image-wrapper {
+    flex-basis: 500px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    box-shadow: 0px 0px 24px rgba(0,0,0,0.20);
+}
+
+.main-section2__div{
+    display:flex;
+    flex-direction:column;
+    flex-basis:300px;
+    flex-grow:0;
+    flex-shrink:0;
+    margin:3em;
+    gap:1em;
+    align-items:center;
+}
+
+.main-view-project{
+    color:var(--purple);
+    text-transform: uppercase;
+}
+
+.squiggle-main{
+    width:4em;
+    height:4em;
+}
+
+#main3{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    padding:3em;
+}
+
+.main-section3__six-articles{
+    display:flex;
+    flex-direction:column;
+    height:20em;
+    justify-content:center;
+    text-align:left;
+    flex-basis:400px;
+    padding: 1em;
+    gap:1.3em;
+    color:var(--grey);
+    margin:1em;
+    border: 1px solid var(--purple);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-section3__six-blocks h2{
+    color:var(--purple);
+}
+
+.main-section3-icons{
+    height:7em;
+    width:7em;
+}
+
+#main4{
+    background-color: var(--purple);
+}
+
+.main-section4__title{
+    flex-grow:0;
+    flex-shrink:1;
+    padding:20px;
+    color:white;
+    text-align:center;
+}
+
+.section4__form{
+    background-color: var(--purple);
+    flex-grow:0;
+    flex-shrink:1;
+    display:flex;
+    flex-direction:column;
+    color:white;
+    text-align:left;
+    flex-basis:50em;
+    max-width:500px;
+    max-height:500px;
+}
+
+
+.section4__form ::placeholder{
+    padding: 0 0 0 1em;
+}
+
+input [type=text] {
+    box-sizing: border-box;
+    color:white;
+    font-size: 0.8em;
+    text-align:left;
+}
+
+#name{
+    width:400px;
+    height:50px;
+}
+
+#email{
+    width:400px;
+    height:50px;
+}
+#message{
+    width:400px;
+    height:200px;
+}
+
+/*!* ------------------------------- 5. Media Queries -------------- *!*/
+
+/*@media screen and (max-width: 576px) {*/
+/*    .image-wrapper {*/
+/*        flex-basis: auto;*/
+/*    }*/
+
+/*    .main-section2-div:nth-of-type(odd),*/
+/*    .main-section2-div {*/
+/*        flex-direction: column;*/
+/*        margin: 0;*/
+/*    }*/
+}
